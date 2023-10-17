@@ -25,4 +25,5 @@ public interface UserMapper {
           "insert into user(id,name) values (#{user.id,jdbcType=INTEGER}, #{user.name,jdbcType=VARCHAR})"
     })
     int insertUser(@Param("user")User user);
+
 }
